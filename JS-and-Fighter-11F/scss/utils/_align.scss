@@ -1,0 +1,24 @@
+/*------------------------------------*\
+    $align
+\*------------------------------------*/
+
+$align: ( 'center': center, 'top': top, 'right': right, 'left': left, 'bottom': bottom);
+@each $key,
+$value in $align {
+    .text-#{ $key } {
+        text-align: $value
+    }
+}
+
+
+/*------------------------------------*\
+    $justify
+\*------------------------------------*/
+
+$justify: ( 'center': center, 'top': top, 'right': right, 'left': left, 'bottom': bottom);
+@each $key,
+$value in $justify {
+    .justify-content-#{ $key } {
+        justify-content: $value
+    }
+}

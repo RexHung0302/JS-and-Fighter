@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>LightBox</title>
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
+    <!-- Animation CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
+    <!-- Main CSS-->
+    <link rel="stylesheet" href="../css/all.css"/>
+  </head>
+  <body>
+    <div class="wrap text-center">
+      <div class="container">
+        <div class="row">
+          <div class="sideBar col-lg-3 col-sm-12"><span class="sideBar__span sideBar__span--fontStyle">FOX <br/> EVERYWHERE</span></div>
+          <article class="col">
+            <div class="list container">
+              <div class="row no-gutters">
+                <div class="col-lg-3 col-md-5 col-sm-12 list__imgBox transitionStyle"><img class="list__img transitionStyle js-img-0" src="../img/img1.png"/></div>
+                <div class="col-lg-3 col-md-5 col-sm-12 list__imgBox transitionStyle"><img class="list__img transitionStyle js-img-1" src="../img/img2.png"/></div>
+                <div class="col-lg-3 col-md-5 col-sm-12 list__imgBox transitionStyle"><img class="list__img transitionStyle js-img-2" src="../img/img3.png"/></div>
+                <div class="col-lg-3 col-md-5 col-sm-12 list__imgBox transitionStyle"><img class="list__img transitionStyle js-img-3" src="../img/img4.png"/></div>
+                <div class="col-lg-3 col-md-5 col-sm-12 list__imgBox transitionStyle"><img class="list__img transitionStyle js-img-4" src="../img/img5.png"/></div>
+                <div class="col-lg-3 col-md-5 col-sm-12 list__imgBox transitionStyle"><img class="list__img transitionStyle js-img-5" src="../img/img6.png"/></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="lightBox container" style="display:none;">
+      <figure class="row">
+        <div class="lightBox__leftPart col-lg-4 col-sm-12 text-left" style="min-height: 200px;">
+          <p class="lightBox__title"><span class="lightBox__markTitle">1</span>/6</p>
+          <p class="lightBox__content">Have you ever seen the cute fox before?</p><span class="lightBox__markName">—Erik Mclean</span>
+        </div>
+        <div class="lightBox__RightPart col">
+          <div class="lightBox__imgBox"><img class="lightBox__img" src="#"/><i class="transitionStyle fas fa-times-circle js-lightBoxModal"></i><i class="transitionStyle fas fa-chevron-left js-lightBoxModal"></i><i class="transitionStyle fas fa-chevron-right js-lightBoxModal"></i></div>
+        </div>
+      </figure>
+    </div>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
