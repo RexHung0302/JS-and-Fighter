@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    $Media
+\*------------------------------------*/
+
+@mixin pad {
+    @media screen and (max-width: 991px) {
+        @content
+    }
+}
+
+@mixin md-mobile {
+    @media screen and (max-width: 767px) {
+        @content
+    }
+}
+
+@mixin sm-mobile {
+    @media screen and (max-width: 414px) {
+        font-size: $fs-sm;
+        @content
+    }
+}

@@ -1,0 +1,12 @@
+.lightBox__leftPart {
+    @include pad {
+        margin-bottom: 60px;
+        min-height: 200px;
+    }
+    @include md-mobile {
+        min-height: 100px;
+    }
+    @include sm-mobile {
+        min-height: 50px;
+    }
+}

@@ -1,0 +1,45 @@
+/*------------------------------------*\
+    $align
+\*------------------------------------*/
+.text-center {
+  text-align: center; }
+
+.text-top {
+  text-align: top; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
+.text-bottom {
+  text-align: bottom; }
+
+/*------------------------------------*\
+    $justify
+\*------------------------------------*/
+.justify-content-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.justify-content-top {
+  -webkit-box-pack: top;
+  -ms-flex-pack: top;
+  justify-content: top; }
+
+.justify-content-right {
+  -webkit-box-pack: right;
+  -ms-flex-pack: right;
+  justify-content: right; }
+
+.justify-content-left {
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  justify-content: left; }
+
+.justify-content-bottom {
+  -webkit-box-pack: bottom;
+  -ms-flex-pack: bottom;
+  justify-content: bottom; }
