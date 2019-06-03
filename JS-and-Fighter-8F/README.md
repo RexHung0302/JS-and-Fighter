@@ -1,6 +1,6 @@
 # JS-and-Fighter-8F
 
-## Canvas畫布
+## 井字遊戲
 
 ### <a href="http://rexhung.me/JS-and-Fighter/JS-and-Fighter-8F/dist/index.html">Demo</a>
 
