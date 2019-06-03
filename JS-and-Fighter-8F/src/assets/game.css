@@ -1,0 +1,407 @@
+.game {
+    padding-top: 9px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FF6D70;
+}
+
+
+/* header */
+
+.marker-box {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    width: 540px;
+    font-size: 48px;
+}
+
+.marker-box .cross-title-box {
+    width: 64px;
+    height: 64px;
+    line-height: 55px;
+    border: 4px solid black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #ED494C;
+    color: white;
+    font-weight: 300;
+}
+
+.marker-box .cross-score-box {
+    width: 170px;
+    height: 64px;
+    line-height: 55px;
+    border: 4px solid black;
+    border-bottom-width: 6px;
+    background-color: white;
+    border-right: none;
+    border-left: none;
+}
+
+.marker-box .vs-box {
+    position: relative;
+    bottom: 7px;
+    width: 70px;
+    height: 71px;
+    background-color: black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white;
+    font-size: 40px;
+    line-height: 70px;
+}
+
+.marker-box .circle-score-box {
+    width: 170px;
+    height: 64px;
+    line-height: 55px;
+    border: 4px solid black;
+    border-bottom-width: 6px;
+    background-color: white;
+    border-right: none;
+    border-left: none;
+}
+
+.marker-box .circle-title-box {
+    width: 64px;
+    height: 64px;
+    line-height: 55px;
+    border: 4px solid black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #ED494C;
+    color: white;
+    font-weight: 300;
+}
+
+.turn-box {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 24.5px;
+    width: 540px;
+    height: 24px;
+}
+
+.turn-box .turn-text {
+    position: relative;
+    font-size: 20px;
+    color: white;
+}
+
+.turn-box .cross-turn {
+    position: absolute;
+    left: 0;
+}
+
+.turn-box .circle-turn {
+    position: absolute;
+    right: 0;
+}
+
+
+/* main */
+
+.play-area {
+    position: relative;
+    margin: 0 auto;
+    width: 540px;
+    height: 540px;
+}
+
+.play-area .grids {
+    border: 4px solid #ed494c;
+    height: 180px;
+    width: 33.33%;
+    margin: 0;
+}
+
+.play-area .grids>svg {
+    font-size: 5rem;
+    margin-top: 3rem;
+}
+
+.play-area .grids:nth-child(1) {
+    margin-top: 0;
+    border-width: 0 4px 4px 0;
+}
+
+.play-area .grids:nth-child(2) {
+    border-width: 0 4px 4px 4px;
+}
+
+.play-area .grids:nth-child(3) {
+    border-width: 0 0 4px 4px;
+}
+
+.play-area .grids:nth-child(4) {
+    border-width: 4px 4px 4px 0;
+}
+
+.play-area .grids:nth-child(6) {
+    border-width: 4px 0 4px 4px;
+}
+
+.play-area .grids:nth-child(7) {
+    border-width: 4px 4px 0 0;
+}
+
+.play-area .grids:nth-child(8) {
+    border-width: 4px 4px 0 4px;
+}
+
+.play-area .grids:nth-child(9) {
+    border-width: 4px 0 0 4px;
+}
+
+.play-area .grids:hover {
+    background-color: rgba(175, 179, 175, 0.288);
+    cursor: pointer;
+}
+
+.play-area .grids:active {
+    box-shadow: 0px 0px 8px 6px rgba(20%, 20%, 40%, 0.5) inset;
+}
+
+
+/* 圈圈叉叉border的部分 */
+
+.play-area .draw-box>div:first-child {
+    border-width: 4px 4px 4px 0;
+}
+
+.play-area .draw-box>div:nth-child(2) {
+    border-width: 4px 4px 4px 4px;
+}
+
+.play-area .draw-box>div:last-child {
+    border-width: 4px 0 4px 4px;
+}
+
+.play-area .top>div:first-child {
+    border-width: 0 4px 4px 0;
+}
+
+.play-area .top>div:nth-child(2) {
+    border-top: 0;
+}
+
+.play-area .top>div:last-child {
+    border-width: 0 0 4px 4px;
+}
+
+.play-area .bottom>div:first-child {
+    border-width: 4px 4px 0 0;
+}
+
+.play-area .bottom>div:nth-child(2) {
+    border-bottom: 0;
+}
+
+.play-area .bottom>div:last-child {
+    border-width: 4px 0 0 4px;
+}
+
+
+/* 叉叉贏 */
+
+.cross-winner-box {
+    position: relative;
+    margin: 0 auto;
+    width: 540px;
+    height: 540px;
+    line-height: 540px;
+    color: #ed494c;
+}
+
+.cross-winner-box span {
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+    font-size: 154px;
+    font-style: oblique;
+    -webkit-text-stroke: .3rem #fff;
+    z-index: 999;
+}
+
+.cross-winner-box:before {
+    position: absolute;
+    left: 50%;
+    top: 13%;
+    content: '';
+    width: 0;
+    height: 400px;
+    border: 18px solid #ed494c;
+    transform: rotate(320deg);
+}
+
+.cross-winner-box:after {
+    position: absolute;
+    left: 50%;
+    top: 13%;
+    content: '';
+    width: 0;
+    height: 400px;
+    border: 18px solid #ed494c;
+    transform: rotate(40deg);
+}
+
+
+/* 圈圈贏 */
+
+.circle-winner-box {
+    position: relative;
+    margin: 0 auto;
+    width: 540px;
+    height: 540px;
+    line-height: 540px;
+    color: #ed494c;
+}
+
+.circle-winner-box span {
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+    font-size: 154px;
+    font-style: oblique;
+    -webkit-text-stroke: .3rem #fff;
+    z-index: 999;
+}
+
+.circle-winner-box:before {
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    content: '';
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 30px solid #ed494c;
+}
+
+
+/* 平手 */
+
+.draw-box {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    width: 540px;
+    height: 540px;
+    color: #ed494c;
+}
+
+.draw-box .draw-text {
+    position: relative;
+    height: 160px;
+    line-height: 160px;
+    font-weight: 700;
+    font-size: 154px;
+    font-style: oblique;
+    -webkit-text-stroke: 1px #fff;
+    z-index: 100;
+}
+
+.bg-cross:after {
+    position: absolute;
+    left: 25%;
+    top: 23%;
+    content: '';
+    width: 0;
+    height: 220px;
+    border: 12px solid #ed494c;
+    -webkit-transform: rotate(320deg);
+    transform: rotate(320deg);
+}
+
+.bg-cross:before {
+    position: absolute;
+    left: 25%;
+    top: 23%;
+    content: '';
+    width: 0;
+    height: 220px;
+    border: 12px solid #ed494c;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+}
+
+.bg-circle:before {
+    position: absolute;
+    left: 58%;
+    top: 25%;
+    content: '';
+    width: 200px;
+    height: 200px;
+    border: 20px solid #ed494c;
+    border-radius: 50%;
+}
+
+
+/* footer */
+
+.restart-box {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 23.5px;
+    width: 540px;
+    height: 89px;
+    line-height: 89px;
+    background-color: #ED494C;
+    border-radius: 5px;
+    font-size: 48px;
+    transition: margin-top .3s, -webkit-transform .3s;
+}
+
+.restart-box a {
+    color: white;
+    text-decoration: none;
+}
+
+.restart-box:hover {
+    margin-top: -5px;
+    background-color: white;
+}
+
+.restart-box a:hover {
+    color: black;
+}
+
+.restart-box:active {
+    box-shadow: 0px 0px 10px 8px rgba(20%, 20%, 40%, 0.5) inset;
+}
+
+
+/* 動畫部分 */
+
+.text-show-enter-active {
+    transition: opacity .8s;
+}
+
+.text-show-enter {
+    opacity: 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+    .game {
+        width: 170vw;
+        height: 170vh;
+    }
+    .marker-box {
+        width: 500px;
+        margin-top: 15px;
+    }
+    .marker-box .cross-score-box {
+        width: 150px;
+    }
+    .marker-box .circle-score-box {
+        width: 150px;
+    }
+    .turn-box {
+        width: 500px;
+        margin-bottom: 50px;
+    }
+    .restart-box {
+        margin-top: 45.5px;
+    }
+}

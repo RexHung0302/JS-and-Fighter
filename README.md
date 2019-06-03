@@ -15,3 +15,5 @@
 #### 6F - 60秒算術遊戲 <a href="http://rexhung.me/JS-and-Fighter/JS-and-Fighter-6F/index.html">Demo</a>、<a href="https://medium.com/@zehung860486/hero-of-underground-%E5%9C%B0%E4%B8%8B%E5%9F%8E-6f-seconds-challenge-%E5%80%92%E6%95%B8%E9%81%8A%E6%88%B2-f71c0b680fdb">Blog</a>
 
 #### 7F - Canvas畫布 <a href="http://rexhung.me/JS-and-Fighter/JS-and-Fighter-7F/index.html">Demo</a>、<a href="https://medium.com/@zehung860486/hero-of-underground-%E5%9C%B0%E4%B8%8B%E5%9F%8E-7f-canvas-%E7%95%AB%E6%9D%BF-fca0a17ae652">Blog</a>
+
+#### 8F - 井字遊戲 <a href="http://rexhung.me/JS-and-Fighter/JS-and-Fighter-8F/dist/index.html">Demo</a>、<a href="https://medium.com/@zehung860486/hero-of-underground-%E5%9C%B0%E4%B8%8B%E5%9F%8E-8f-tic-tac-toe-%E4%BA%95%E5%AD%97%E9%81%8A%E6%88%B2-e5b3d95dd2cb">Blog</a>
