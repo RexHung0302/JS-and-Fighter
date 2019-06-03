@@ -1,0 +1,362 @@
+html,
+body {
+    width: 100vw;
+    height: 100%;
+}
+
+#contents {
+    position: relative;
+    height: 100%;
+    display: flex;
+    overflow-x: hidden;
+}
+
+
+/* 共用 Class 區 */
+
+.mode-area {
+    position: relative;
+    height: 32px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.mode-area .text-left {
+    font-size: 24px;
+    flex: 1;
+}
+
+.mode-area .text-right {
+    height: 32px;
+}
+
+hr {
+    border: 1px solid #cccccc;
+}
+
+.not-allowed {
+    cursor: not-allowed!important;
+}
+
+
+/* 中間圖片區塊 */
+
+.main-area {
+    position: absolute;
+    background-image: url("../img/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 70%;
+    right: 0;
+    -webkit-transition: all .6s;
+    transform: translateX(0%);
+}
+
+.main-area.bg-filter {
+    -webkit-filter: grayscale(1);
+}
+
+.main-area .onoff-switch-area {
+    position: absolute;
+    width: 65px;
+    height: 32px;
+    right: 85px;
+    bottom: 40px;
+}
+
+.main-area .drop-btn {
+    position: absolute;
+    right: 92px;
+    top: 52px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.main-area .drop-btn i {
+    color: #fff;
+    font-size: 40px;
+    vertical-align: middle;
+    -webkit-transition: all 1s;
+}
+
+.main-area .drop-btn i.night-btn {
+    color: black;
+}
+
+.main-area .drop-btn i.night-btn:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+.main-area .drop-btn i:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    color: #000;
+}
+
+.main-area .add-rubbish-box {
+    position: absolute;
+    border-bottom: 1px solid white;
+    left: 110px;
+    top: 50%;
+    width: 70%;
+}
+
+.main-area .add-rubbish-box.light-before-text:before {
+    content: "“新增語錄“";
+    position: absolute;
+    left: -50px;
+    top: -100px;
+    font-size: 56px;
+    color: white;
+}
+
+.main-area .add-rubbish-box.night-before-text:before {
+    content: "“新增語錄“";
+    position: absolute;
+    left: -50px;
+    top: -100px;
+    font-size: 56px;
+    color: black;
+}
+
+.main-area .add-rubbish-box input {
+    border: 0;
+    background-color: transparent;
+    font-size: 24px;
+    color: #fff;
+}
+
+.main-area .add-rubbish-box i {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 35px;
+    color: #fff;
+}
+
+.main-area .add-rubbish-box i:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+
+/* 左邊區塊*/
+
+.rubbish-box {
+    position: absolute;
+    left: -200px;
+    top: 45%;
+    max-width: 560px;
+    min-width: 560px;
+    font-size: 56px;
+    z-index: 999;
+    line-height: 80px;
+    -webkit-transition: all .6s;
+}
+
+.rubbish-box input {
+    height: 200px;
+    border: none;
+    box-shadow: 5px 5px 2px 4px black;
+}
+
+.rubbish-box span {
+    background-color: #ffff;
+}
+
+.rubbish-box span:before {
+    position: absolute;
+    font-family: monospace;
+    content: "“";
+    top: -80px;
+    left: -60px;
+    font-size: 100px;
+    color: #000;
+    -webkit-text-stroke: 1px #000;
+}
+
+.rubbish-box span.tag:before {
+    -webkit-text-stroke: 1px #fff;
+}
+
+
+/* 左邊語錄按鈕 */
+
+.save-cancel-btn {
+    position: absolute;
+    left: 70px;
+    top: 210px;
+    display: flex;
+}
+
+.save-cancel-btn button:first-child {
+    background-color: black;
+    color: white;
+}
+
+.save-cancel-btn button:nth-child(2) {
+    background-color: white;
+    color: black;
+}
+
+
+/* 右邊區塊 */
+
+.right-bar {
+    position: absolute;
+    width: 510px;
+    height: 100%;
+    right: 0;
+    padding: 45px 40px;
+    overflow-y: scroll;
+    -webkit-transition: all .6s;
+    transform: translateX(100%);
+}
+
+.right-bar .right-arrow-area {
+    position: relative;
+    padding-bottom: 40px;
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+}
+
+.right-bar .right-rubbish-area {
+    position: relative;
+    padding: 0 50px;
+}
+
+.right-bar .fa-arrow-right {
+    vertical-align: middle;
+    -webkit-transition: all 1s;
+}
+
+.right-bar .fa-arrow-right:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+/* 語錄區 */
+
+.right-bar .title-rubbish-area {
+    height: 28px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.right-bar .title-rubbish-area .text-left {
+    flex: 1;
+    font-size: 24px;
+}
+
+.right-bar .title-rubbish-area .text-right {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.right-bar #add_rubbish_talking_btn {
+    letter-spacing: 5px;
+}
+
+.right-bar #add_rubbish_talking_btn:hover {
+    opacity: 0.8;
+}
+
+.right-bar .add-rubbish-input-area {
+    position: relative;
+}
+
+.right-bar .add-rubbish-input-area input {
+    border: 0;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.right-bar .add-rubbish-input-area input:focus {
+    outline: none;
+}
+
+.right-bar .add-rubbish-input-area i {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.right-bar .rubbish-area ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.right-bar .rubbish-area ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 0;
+    line-height: 1.5;
+    font-size: 16px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+}
+
+.right-bar .rubbish-area ul li:last-child {
+    border-bottom: none;
+}
+
+.right-bar .rubbish-area ul li>span:first-child {
+    word-break: break-word;
+    white-space: normal;
+    flex: 1;
+}
+
+.right-bar .rubbish-area ul li .i-btn i {
+    margin-left: 20px;
+}
+
+.right-bar .rubbish-area ul li .i-btn i:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.right-bar .rubbish-area ul li input {
+    border: 0;
+    background-color: transparent;
+    width: 100%;
+    background-color: #DEDEDE;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+
+/* 偏好設定 */
+
+.right-bar .setting-area span {
+    cursor: pointer;
+}
+
+
+/* 按下漢堡鈕後 */
+
+#contents.active .main-area {
+    transform: translateX(-50%);
+}
+
+#contents.active .right-bar {
+    transform: translateX(0%);
+}
+
+#contents.active .rubbish-box {
+    display: none;
+}

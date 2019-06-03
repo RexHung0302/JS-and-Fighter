@@ -1,0 +1,164 @@
+* {
+    font-family: 'Playfair Display', serif;
+    font-family: 'Noto Serif TC', serif;
+}
+
+
+/* 共用 Class */
+
+.body-light-mode {
+    animation: body_light_mode .8s;
+    animation-fill-mode: forwards;
+}
+
+.body-night-mode {
+    animation: body_night_mode .8s;
+    animation-fill-mode: forwards;
+}
+
+.rubbish-font-light-mode {
+    animation: rubbish_font_light_mode .8s;
+    animation-fill-mode: forwards;
+}
+
+.rubbish-font-night-mode {
+    animation: rubbish_font_night_mode .8s;
+    animation-fill-mode: forwards;
+}
+
+
+/* 按鈕 */
+
+.onoffswitch {
+    position: relative;
+    width: 65px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    height: 32px;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #DEDEDE;
+    border-radius: 25px;
+}
+
+.onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 32px;
+    padding: 0;
+    line-height: 32px;
+    font-size: 14px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "";
+    padding-left: 10px;
+    background-color: #575757;
+    color: #000000;
+}
+
+.onoffswitch-inner:after {
+    content: "";
+    padding-right: 10px;
+    background-color: #EDEDED;
+    color: #000000;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    height: 60%;
+    display: block;
+    width: 18px;
+    margin: 7px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 29px;
+    border: 2px solid #DEDEDE;
+    border-radius: 25px;
+    transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
+
+
+/* 動畫區 */
+
+
+/* 背景 */
+
+@keyframes body_light_mode {
+    0% {
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+    100% {
+        background-color: #FFFFFF;
+        color: #000000;
+    }
+}
+
+@keyframes body_night_mode {
+    0% {
+        background-color: #FFFFFF;
+        color: #000000;
+    }
+    100% {
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+}
+
+
+/* 文字顏色 */
+
+@keyframes rubbish_font_light_mode {
+    0% {
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+    100% {
+        background-color: #FFFFFF;
+        color: #000000;
+    }
+}
+
+@keyframes rubbish_font_night_mode {
+    0% {
+        background-color: #FFFFFF;
+        color: #000000;
+    }
+    100% {
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+}

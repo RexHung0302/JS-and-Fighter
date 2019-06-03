@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC|Playfair+Display" rel="stylesheet">
+    <!-- Plugins of Fontawesome-v5.7.2 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+    <!-- Plugins of Bootstrap-v4.0.0 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- 共用CSS -->
+    <link rel="stylesheet" href="./assets/css/all.css">
+    <!-- 獨立CSS -->
+    <link rel="stylesheet" href="./assets/css/newtab.css">
+</head>
+
+<body>
+    <div id="contents">
+        <div class="main-area">
+            <div class="rubbish-box">
+                <span class="tag" id="tag">努力不一定成功，不努力一定很輕鬆。</span>
+                <div class="save-cancel-btn d-none">
+                    <button class="save-btn" type="button">儲存</button>
+                    <button class="cancel-btn" type="button">取消</button>
+                </div>
+            </div>
+            <div class="add-rubbish-box light-before-text d-none">
+                <input class="w-100" type="text" placeholder="新增語錄" id="add_rubbish_talking_input">
+                <i class="fas fa-plus-circle" id="add_rubbish_talking_confirm_btn"></i>
+            </div>
+            <div class="drop-btn">
+                <i class="fas fa-hamburger"></i>
+            </div>
+            <div class="onoff-switch-area">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox light-mode" id="myonoffswitch">
+                <label class="onoffswitch-label" for="myonoffswitch">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                </label>
+            </div>
+        </div>
+        <div class="right-bar">
+            <div class="right-arrow-area">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="right-rubbish-area">
+                <div class="mode-area">
+                    <div class="text-left">
+                        <span class="d-mode">日間模式</span>
+                        <span class="n-mode d-none">夜間模式</span>
+                    </div>
+                    <div class="onoffswitch text-right">
+                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox light-mode" id="myonoffswitch">
+                        <label class="onoffswitch-label" for="myonoffswitch">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                </div>
+                <hr>
+                <div class="title-rubbish-area">
+                    <div class="text-left">
+                        <span>我的語錄</span>
+                    </div>
+                    <div class="text-right">
+                        <span>編輯</span>
+                    </div>
+                </div>
+                <div class="rubbish-area">
+                    <ul>
+                        <!-- <li>
+                            <span>未來每少一分鐘，你的過去就多一分鐘。</span>
+                            <span class="i-btn">
+                                <i class="fas fa-edit"></i>
+                                <i class="fas fa-trash-alt"></i>
+                            </span>
+                        </li> -->
+                    </ul>
+                </div>
+                <hr>
+                <div class="text-right setting-area">
+                    <i class="fas fa-arrow-down mr-2"></i><span>載入更多</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Plugins of jquery-v3.2.1 -->
+    <script src="./assets/js/jquery.js"></script>
+    <!-- Plugins of popper-v1.12.9 -->
+    <script src="./assets/js/popper.js"></script>
+    <!-- Plugins of Bootstrap-v4.0.0 -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- 共用JS -->
+    <script src="./assets/js/cover.js"></script>
+    <!-- 獨立JS -->
+    <script src="./assets/js/newtab.js"></script>
+
+</body>
+
+</html>

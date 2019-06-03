@@ -1,0 +1,151 @@
+html {
+    border: 1px solid black;
+    font-size: 24px;
+}
+
+body {
+    padding: 24px;
+    white-space: nowrap;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 15px;
+}
+
+#container {
+    width: 320px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* 共用 Class 區 */
+
+.mode-area {
+    height: 32px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.mode-area .text-left {
+    font-size: 24px;
+    flex: 1
+}
+
+.mode-area .text-right {
+    height: 32px;
+}
+
+hr {
+    border: 1px solid #cccccc;
+}
+
+.not-allowed {
+    cursor: not-allowed!important;
+}
+
+
+/* 語錄區 */
+
+.title-rubbish-area {
+    height: 28px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.title-rubbish-area .text-left {
+    flex: 1;
+    font-size: 24px;
+}
+
+.title-rubbish-area .text-right {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#add_rubbish_talking_btn {
+    letter-spacing: 5px;
+}
+
+#add_rubbish_talking_btn:hover {
+    opacity: 0.8;
+}
+
+.add-rubbish-input-area {
+    position: relative;
+}
+
+.add-rubbish-input-area input {
+    border: 0;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.add-rubbish-input-area input:focus {
+    outline: none;
+}
+
+.add-rubbish-input-area i {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.rubbish-area ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.rubbish-area ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 0;
+    line-height: 1.5;
+    font-size: 16px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+}
+
+.rubbish-area ul li:last-child {
+    border-bottom: none;
+}
+
+.rubbish-area ul li>span:first-child {
+    word-break: break-word;
+    white-space: normal;
+}
+
+.rubbish-area ul li .i-btn i {
+    margin-left: 20px;
+}
+
+.rubbish-area ul li .i-btn i:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.rubbish-area ul li input {
+    border: 0;
+    background-color: transparent;
+    width: 100%;
+    background-color: #DEDEDE;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+
+/* 偏好設定 */
+
+.setting-area span {
+    cursor: pointer;
+}
