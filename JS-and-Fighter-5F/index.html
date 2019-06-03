@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>空氣品質指標</title>
+
+    <link rel="stylesheet" type="text/css" href="cover.css">
+
+    <!-- AXIOS -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="title-box">
+            <div class="title-left-box">
+                <span class="title">空氣品質指標(AQI)</span><br>
+                <select class="select-box">
+                    <option selected disabled>請選擇地區</option>
+                </select>
+            </div>
+            <div class="title-right-box">
+                <table>
+                    <tr class="up-tr">
+                        <th class="th-1">0~50</th>
+                        <th class="th-2">51~100</th>
+                        <th class="th-3">101~150</th>
+                        <th class="th-4">151~200</th>
+                        <th class="th-5">201~300</th>
+                        <th class="th-6">301~400</th>
+                    </tr>
+                    <tr class="under-tr">
+                        <th>讚啦</th>
+                        <th>還行</th>
+                        <th>對某些人<br>不友善</th>
+                        <th>對所有人<br>不友善</th>
+                        <th>超級不有友善</th>
+                        <th>紅色警戒</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="status-box">
+                <div class="city-box">
+                    <span class="updata-city-name">未指定</span>
+                </div>
+                <div class="hr-box">
+                    <hr>
+                </div>
+                <div class="updata-box">
+                    <span class="updata-time">尚未更新</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="loading-box">
+            <div class="loading-text">
+                <span>LOADING...</span>
+            </div>
+            <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="contents-left-part">
+            <div class="location-box">
+                <div class="locoation-name">
+                    <span class="city-name"></span>
+                </div>
+                <div class="location-num" id="city-AQI">
+                    <span></span>
+                </div>
+            </div>
+            <ul class="location-contents-box">
+                <li>
+                    <span class="list-content-1">臭氧</span>
+                    <span class="list-content-2">O3 (ppb)</span>
+                    <span class="list-content-3 num-1"></span>
+                </li>
+                <li>
+                    <span class="list-content-1">懸浮微粒</span>
+                    <span class="list-content-2">PM10 (μg/m³)</span>
+                    <span class="list-content-3 num-2"></span>
+                </li>
+                <li>
+                    <span class="list-content-1">細懸浮微粒</span>
+                    <span class="list-content-2">PM2.5 (μg/m³)</span>
+                    <span class="list-content-3 num-3"></span>
+                </li>
+                <li>
+                    <span class="list-content-1">一氧化碳</span>
+                    <span class="list-content-2">CO (ppm)</span>
+                    <span class="list-content-3 num-4"></span>
+                </li>
+                <li>
+                    <span class="list-content-1">二氧化硫</span>
+                    <span class="list-content-2">SO2 (ppb)</span>
+                    <span class="list-content-3 num-5"></span>
+                </li>
+                <li>
+                    <span class="list-content-1">二氧化氮</span>
+                    <span class="list-content-2">NO2 (ppb)</span>
+                    <span class="list-content-3 num-6"></span>
+                </li>
+            </ul>
+        </div>
+        <ul class="contents-right-part">
+        </ul>
+    </main>
+    <footer>
+        <div class="footer-box">
+            <span class="text-left footer-content-1">資料來源：行政院環境保護署</span>
+            <span class="text-right footer-content-2">Copyright © 2019 HexSchool. All rights reserved.</span>
+        </div>
+    </footer>
+    <script src="jquery-3.3.1.js"></script>
+    <script src="js.js"></script>
+</body>
+
+</html>
