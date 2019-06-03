@@ -1,0 +1,328 @@
+html {
+    background-color: #FF9D00;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+/* header */
+
+header {
+    min-height: 200px;
+}
+
+
+/* main */
+
+main {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* main step1 */
+
+main .step1-box {
+    position: relative;
+    margin: 0 auto;
+}
+
+main .step1-box .title-box {
+    position: relative;
+    height: 282px;
+    display: inline-flex;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+main .step1-box .title-box .seconds-num {
+    margin-right: 24px;
+    width: 243px;
+    height: 283px;
+    font-size: 240px;
+    color: white;
+    text-shadow: 12px 0 #000000;
+}
+
+main .step1-box .title-box .seconds-text {
+    font-size: 96px;
+    font-weight: bold;
+    text-align: left;
+    width: 473px;
+    height: 208px;
+    margin-top: 20px;
+}
+
+main .step1-box .title-box .seconds-text span:first-child:after {
+    content: '+-x÷';
+    position: absolute;
+    transform: translateY(35%);
+    margin-left: 10px;
+    display: inline-block;
+    letter-spacing: 2px;
+    width: 85px;
+    font-size: 44px;
+    color: white;
+    border-bottom: 12px double #fff;
+    font-family: "Roboto Condensed";
+}
+
+main .step1-box .star-box {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 75px;
+    width: 350px;
+    height: 58px;
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 58px;
+    transition: margin-top .3s, -webkit-transform .3s;
+}
+
+main .step1-box .star-box:hover {
+    transform: translateY(-5%);
+    cursor: pointer;
+}
+
+main .step1-box .star-box:active {
+    background-color: white;
+    box-shadow: 1px 0px 4px 3px rgba(20%, 20%, 40%, 0.5) inset;
+}
+
+main .step1-box .star-box span {
+    color: #FF9D00;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+main .step1-box .star-box marquee {
+    height: 28px;
+    line-height: 28px;
+    font-size: 24px;
+    font-style: italic;
+    color: white;
+}
+
+
+/* main step2 - before-star-box */
+
+main .before-star-box {
+    position: absolute;
+    left: 50%;
+    width: 160px;
+    text-align: center;
+    margin-left: -80px;
+    font-size: 15rem;
+    color: white;
+    text-shadow: 12px 0 #000000;
+}
+
+
+/* main step2 */
+
+main .step2-box .up-part {
+    display: flex;
+}
+
+main .step2-box .up-part .left-part {
+    position: relative;
+    left: 15%;
+    margin-right: 128px;
+}
+
+main .step2-box .up-part .left-part .left-title-box {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    border: 3px solid #fff;
+    width: 342px;
+    height: 51px;
+    text-align: center;
+    line-height: 51px;
+}
+
+main .step2-box .up-part .left-part .left-score-box {
+    text-align: left;
+}
+
+main .step2-box .up-part .left-part .left-score-box span:first-child {
+    background-color: white;
+    color: #FF9D00;
+    width: 114px;
+    height: 55px;
+    text-align: center;
+    padding: 12px 16px;
+    line-height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+main .step2-box .up-part .left-part .left-score-box span:last-child {
+    position: absolute;
+    margin: 7px 0 0 10px;
+    font-size: 44px;
+    font-weight: bold;
+}
+
+main .step2-box .up-part .right-part {
+    position: relative;
+    left: 25%;
+    width: 260px;
+    height: 112px;
+    font-size: 96px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+main .step2-box .down-part {
+    position: relative;
+    margin-top: 104px;
+    height: 131px;
+    font-size: 112px;
+    font-weight: bold;
+}
+
+main .step2-box .down-part span {
+    margin: 0 30px;
+    vertical-align: middle;
+}
+
+main .step2-box .down-part input {
+    width: 255px;
+    height: 131px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 112px;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: box-shadow: inset 0px 0px 4px 7px #efe6e4;
+}
+
+main .step2-box .down-part input.error {
+    animation: error .3s;
+}
+
+main .step2-box .down-part input.success {
+    animation: success .3s;
+}
+
+main .step2-box .down-part marquee {
+    position: absolute;
+    margin-left: 9.2rem;
+    font-size: 24px;
+    height: 30px;
+    width: 261px;
+    color: white;
+}
+
+
+/* main step3 */
+
+main .step3-box {
+    text-align: center;
+    position: relative;
+}
+
+main .step3-box .up-part .title-box {
+    height: 51px;
+    text-align: center;
+    line-height: 51px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+main .step3-box .up-part .title-box span {
+    border: 3px solid;
+    padding: 8px 16px;
+}
+
+main .step3-box .up-part .title-2-box {
+    height: 66px;
+    font-size: 56px;
+    font-weight: bold;
+}
+
+main .step3-box .up-part .title-2-box span:first-child {
+    color: white;
+}
+
+main .step3-box .up-part .title-2-box span:last-child {
+    color: white;
+}
+
+main .step3-box .up-part .score-box {
+    font-size: 112px;
+    font-weight: bold;
+}
+
+main .step3-box .up-part .try-again-btn {
+    margin-top: 112px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 36px;
+    transition: margin-top .3s, -webkit-transform .3s;
+}
+
+main .step3-box .up-part .try-again-btn span {
+    background-color: black;
+    color: #FF9D00;
+    padding: 8px 89px;
+}
+
+main .step3-box .up-part .try-again-btn span:hover {
+    transform: translateY(-10%);
+    cursor: pointer;
+}
+
+main .step3-box .up-part .try-again-btn span:active {
+    background-color: white;
+    box-shadow: 1px 0px 4px 3px rgba(20%, 20%, 40%, 0.5) inset;
+}
+
+
+/* error animation CSS */
+
+@keyframes error {
+    20% {
+        box-shadow: inset 0px 0px 4px 7px #f1683d;
+    }
+    50% {
+        box-shadow: inset 0px 0px 4px 7px #FF5722;
+    }
+    70% {
+        box-shadow: inset 0px 0px 4px 7px #ff4206;
+    }
+    80% {
+        box-shadow: inset 0px 0px 4px 7px #f38e6d;
+    }
+    100% {
+        box-shadow: inset 0px 0px 4px 7px #efe6e4;
+    }
+}
+
+
+/* success animation CSS */
+
+@keyframes success {
+    20% {
+        box-shadow: inset 0px 0px 4px 7px #8bc34a;
+    }
+    50% {
+        box-shadow: inset 0px 0px 4px 7px #91da3c;
+    }
+    70% {
+        box-shadow: inset 0px 0px 4px 7px #8ce229;
+    }
+    80% {
+        box-shadow: inset 0px 0px 4px 7px #9bda52;
+    }
+    100% {
+        box-shadow: inset 0px 0px 4px 7px #aed681;
+    }
+}

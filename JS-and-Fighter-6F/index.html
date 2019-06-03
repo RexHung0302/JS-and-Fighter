@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>60 Seconds Challenge</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/cover.css">
+
+    <!-- FontFamily CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css-master/animate.min.css">
+
+</head>
+
+<body>
+    <header>
+    </header>
+    <main>
+        <div class="step1-box" style="">
+            <div class="title-box animated bounceInDown delay-0s">
+                <div class="seconds-num">
+                    <a class="">60</a>
+                </div>
+                <div class="seconds-text">
+                    <span class="aaa">SECONDS</span><br><span>CHALLENGE</span>
+                </div>
+            </div>
+            <div class="star-box animated fadeIn delay-1s">
+                <span>START!</span>
+                <marquee direction="right" scrollamount="5" behavior="alternate">try to answer more as you can</marquee>
+            </div>
+        </div>
+        <div class="before-star-box">
+            <audio id="audio" src="assets/audio/Count-Down-Music.mp3" style="display:none"></audio>
+            <a class="before-star-text"></a>
+        </div>
+        <div class="step2-box" style="display: none;">
+            <div class="up-part">
+                <div class="left-part">
+                    <div class="left-title-box">
+                        <span>60 SECONDS CHALLENGE</span>
+                    </div>
+                    <div class="left-score-box">
+                        <span>SCORE</span><span class="score-box">000</span>
+                    </div>
+                </div>
+                <div class="right-part">
+                    <span class="count-time">01 : 00</span>
+                </div>
+            </div>
+            <div class="down-part">
+                <audio id="audio2" src="assets/audio/bg-music.mp3" style="display:none"></audio>
+                <audio id="audio3" src="assets/audio/timeout.mp3" style="display:none"></audio>
+                <span class="question-number-1">11</span><span class="question-sign-1">x</span><span class="question-number-2">12</span><span>=</span><input class="answer-input" type="text"><br>
+                <marquee direction="right" scrollamount="5" behavior="alternate">press enter to answer</marquee>
+            </div>
+        </div>
+        <div class="step3-box">
+            <div class="up-part">
+                <div class="title-box">
+                    <span>60 SECONDS CHALLENGE</span>
+                </div>
+                <div class="title-2-box">
+                    <span>— </span><span>YOUR FINAL SCORE</span><span> —</span>
+                    <audio id="audio4" src="assets/audio/bad.mp3" style="display:none"></audio>
+                    <audio id="audio5" src="assets/audio/good.mp3" style="display:none"></audio>
+                </div>
+                <div class="score-box">
+                    <span class="end-score">0</span>
+                </div>
+                <div class="try-again-btn">
+                    <span>TRY AGAIN!</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <script src="assets/js/js.js"></script>
+</body>
+
+</html>
