@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Drawing Board</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/cover.css">
+
+    <!-- Bootstrap for CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <!-- fontfamily CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css-master/animate.min.css">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <ul class="nav justify-content-center show-nav title-nav">
+            <li class="nav-item mr-4 download-btn">
+                <a class="nav-link save" href="#" download="我的創作"><i class="fas fa-save fa-2x"></i>Save</a>
+            </li>
+            <li class="nav-item mr-4 clear-all-btn">
+                <a class="nav-link"><i class="fas fa-snowplow fa-2x"></i>CLEAR ALL</a>
+            </li>
+            <li class="nav-item mr-4 back-step disable-btn">
+                <a class="nav-link"><i class="fas fa-hand-point-left fa-2x"></i>UNDO</a>
+            </li>
+            <li class="nav-item mr-4 next-step disable-btn">
+                <a class="nav-link"><i class="fas fa-hand-point-right fa-2x"></i>REDO</a>
+            </li>
+        </ul>
+        <div class="show-hide-box">
+            <span><i class="fas fa-angle-up"></i></span>
+        </div>
+    </header>
+    <main>
+        <canvas id="drawing_board" width='800' height='800'></canvas>
+    </main>
+    <footer>
+        <input type="file" class="form-control-file photo-up rounded" style="display: none;" id="photo_up" />
+        <div class="tool-box show-tool-box">
+            <div class="pen-tool-box text-center col-12 form-row hide-now">
+                <div class="col-4 pen-tool-1"><i class="fas fa-pencil-alt fa-2x"></i></div>
+                <div class="col-4 pen-tool-2"><i class="fas fa-eraser fa-2x"></i></div>
+                <div class="col-4 pen-tool-3" id='pen-tool-3'>
+                    <i class="fas fa-file-upload fa-2x"></i>
+                </div>
+                <div class="arrow">
+                </div>
+            </div>
+            <div class="show-hide-box-2">
+                <span><i class="fas fa-angle-down"></i></span>
+            </div>
+            <ul class="nav text-left tool-ul">
+                <li class="nav-item mx-4 now-tool-li">
+                    <a class="nav-link py-0 pr-3 now-pen-tool"><i class="fas fa-pencil-alt fa-2x"></i></a>
+                </li>
+                <li class="nav-item mr-4">
+                    <a class="nav-link py-0 px-0">SIZE：<input class="text-center pen-width" type="text" value="10"> &nbsp;px</a>
+                </li>
+                <li class="nav-item mr-1 color-li">
+                    <a class="nav-link p-0">COLOR：</a>
+                    <span class="color-1 mx-1"><span class="check"></span></span>
+                    <span class="color-2 mr-1"><span class="check">✔</span></span>
+                    <span class="color-3 mr-1"><span class="check"></span></span>
+                    <span class="color-4 mr-1"><span class="check"></span></span>
+                    <span class="color-5 mr-1"><span class="check"></span></span>
+                    <span class="color-6"><input type="color" id="myColor"><span class="check"></span></span>
+                </li>
+            </ul>
+        </div>
+        <div class="tool-box-2 text-center hide-tool-box-2">
+            <i class="fas fa-pencil-alt"></i>
+        </div>
+    </footer>
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <script src="assets/js/js.js"></script>
+    <script src="assets/js/canvas.js"></script>
+</body>
+
+</html>

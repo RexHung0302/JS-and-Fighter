@@ -1,0 +1,645 @@
+html {
+    background-color: #E8E8E8;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body,
+main,
+footer {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+body .show-now {
+    display: -webkit-inline-box;
+    animation: show-now .4s;
+}
+
+body .hide-now {
+    display: none;
+    animation: hide-now .4s;
+}
+
+
+/* header */
+
+header ul {
+    height: 80px;
+    line-height: 70px;
+    box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 16%);
+}
+
+header ul li {
+    height: 100%;
+    z-index: 999;
+}
+
+header ul li:hover {
+    background-color: #3f78f9;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+header ul li:active {
+    box-shadow: 1px 0px 4px 5px rgba(20%, 20%, 40%, 0.5) inset;
+}
+
+header ul i {
+    vertical-align: sub;
+    padding-right: 14px;
+}
+
+header .show-hide-box {
+    position: absolute;
+    left: 50%;
+    margin-left: -28px;
+    margin-top: -30px;
+    width: 56px;
+    height: 56px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 82px;
+    box-shadow: 0px 5px 1px 1px #c1bfbf;
+}
+
+header .show-hide-box:hover {
+    cursor: pointer;
+}
+
+header .title-nav.show-nav {
+    animation: nav-down .4s;
+    animation-fill-mode: forwards;
+}
+
+header .show-nav .save {
+    color: black;
+}
+
+header .show-nav .save:hover {
+    color: white;
+}
+
+header .title-nav.hide-nav {
+    animation: nav-up .4s;
+    animation-fill-mode: forwards;
+}
+
+header .show-hide-box .fa-angle-up.turn-up {
+    animation: turn-up .4s;
+    animation-fill-mode: forwards;
+}
+
+header .show-hide-box .fa-angle-up.turn-down {
+    animation: turn-down .4s;
+    animation-fill-mode: forwards;
+}
+
+header .title-nav .disable-btn {
+    background-color: white;
+    color: gray;
+    cursor: not-allowed;
+}
+
+header .title-nav .disable-btn:active {
+    box-shadow: none;
+}
+
+
+/* main */
+
+main {
+    min-width: 1200px;
+    height: 100%;
+    background-color: #E8E8E8;
+}
+
+main #drawing_board {
+    min-width: 1200px;
+    height: 100%;
+    background-color: #E8E8E8;
+}
+
+
+/* footer */
+
+footer .tool-box {
+    position: absolute;
+    left: 50%;
+    margin-left: -375px;
+    bottom: 40px;
+    width: 780px;
+    height: 84px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 16%);
+    z-index: 999;
+}
+
+footer .tool-box.hide-tool-box {
+    animation: drop-down .4s;
+    animation-fill-mode: forwards;
+}
+
+footer .tool-box.show-tool-box {
+    animation: drop-up .4s;
+    animation-fill-mode: forwards;
+}
+
+footer .show-hide-box-2 {
+    position: absolute;
+    left: 50%;
+    margin-left: -28px;
+    margin-top: -24px;
+    width: 56px;
+    height: 56px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+
+footer .tool-box .tool-ul {
+    height: 84px;
+    line-height: 84px;
+}
+
+footer .tool-box .tool-ul li {
+    z-index: 999;
+    height: 84px;
+    display: inline-flex;
+}
+
+footer .tool-box .tool-ul li i {
+    vertical-align: sub;
+}
+
+footer .tool-box .tool-ul li input {
+    width: 74px;
+    height: 46px;
+    background-color: #E8E8E8;
+    border-radius: 20px;
+    border: none;
+}
+
+footer .tool-box .tool-ul .now-tool-li:hover {
+    background-color: #3f78f9;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+footer .tool-box .tool-ul .now-tool-li:active {
+    box-shadow: 1px 0px 4px 5px rgba(20%, 20%, 40%, 0.5) inset;
+}
+
+footer .tool-box .tool-ul .color-li span {
+    width: 48px;
+    height: 48px;
+    transition: margin-top .3s, -webkit-transform .3s;
+}
+
+footer .tool-box .tool-ul .color-li span:hover {
+    cursor: pointer;
+    margin-top: -5px;
+}
+
+footer .tool-box .tool-ul .color-li .check {
+    position: absolute;
+    left: 10px;
+}
+
+footer .tool-box .tool-ul .pen-width {
+    font-weight: bold;
+}
+
+
+/* footer .tool-box .tool-ul .color-li span:active::before {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: rotate(45deg) translate(-50%);
+    content: "";
+    width: 8px;
+    height: 14px;
+    border-right: 4px solid #f2894d;
+    border-bottom: 4px solid #f2894d;
+} */
+
+footer .tool-box .tool-ul .color-li .color-1 {
+    position: relative;
+    background-color: white;
+    top: 18px;
+    line-height: 45px;
+    padding: 0px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+footer .tool-box .tool-ul .color-li .color-2 {
+    position: relative;
+    background-color: #000000;
+    top: 18px;
+    line-height: 45px;
+    padding: 0px;
+    border-radius: 50%;
+}
+
+footer .tool-box .tool-ul .color-li .color-3 {
+    position: relative;
+    background-color: #9BFFCD;
+    top: 18px;
+    line-height: 45px;
+    padding: 0px;
+    border-radius: 50%;
+}
+
+footer .tool-box .tool-ul .color-li .color-4 {
+    position: relative;
+    background-color: #00CC99;
+    top: 18px;
+    line-height: 45px;
+    padding: 0px;
+    border-radius: 50%;
+}
+
+footer .tool-box .tool-ul .color-li .color-5 {
+    position: relative;
+    background-color: #01936F;
+    top: 18px;
+    line-height: 45px;
+    padding: 0px;
+    border-radius: 50%;
+}
+
+footer .tool-box .tool-ul .color-li .color-6 input {
+    position: relative;
+    top: 6px;
+    line-height: 45px;
+    padding: 0px;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    border: 1px solid white;
+    border: 1px solid #ccc;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 50%;
+    -moz-box-shadow: 2px 2px 3px #666;
+    -webkit-box-shadow: 2px 2px 3px #666;
+    font-size: 20px;
+    padding: 3px 7px;
+    outline: 0;
+    -webkit-appearance: none;
+}
+
+footer .tool-box-2 {
+    position: absolute;
+    left: 50%;
+    margin-left: -40px;
+    bottom: 90px;
+    width: 56px;
+    height: 56px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 16%);
+    line-height: 56px;
+}
+
+footer .tool-box-2:hover {
+    background-color: #3f78f9;
+    color: white;
+    cursor: pointer;
+}
+
+footer .tool-box-2:active {
+    box-shadow: 1px 0px 4px 5px rgba(20%, 20%, 40%, 0.5) inset;
+}
+
+footer .tool-box-2.show-tool-box-2 {
+    animation: op-up .4s;
+    animation-fill-mode: forwards;
+}
+
+footer .tool-box-2.hide-tool-box-2 {
+    animation: op-down .4s;
+    animation-fill-mode: forwards;
+}
+
+footer .tool-box-2 i {
+    vertical-align: sub;
+    font-size: 1.8rem;
+}
+
+footer .pen-tool-box {
+    position: absolute;
+    width: 230px;
+    height: 120px;
+    background-color: white;
+    bottom: 6.3rem;
+    left: 1rem;
+    border-radius: 30px;
+    box-shadow: 6px -1px 6px 4px rgba(0, 0, 0, 16%);
+    line-height: 120px;
+}
+
+footer .pen-tool-box div {
+    transition: margin-top .3s, -webkit-transform .3s;
+}
+
+footer .pen-tool-box div:hover {
+    color: #3f78f9;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: -10px;
+}
+
+footer .pen-tool-box div:active {
+    color: black;
+}
+
+footer .arrow {
+    position: absolute;
+    left: 2.5rem;
+    top: 6rem;
+    width: 0;
+    height: 0;
+    border-width: 20px 10px;
+    border-style: solid;
+    border-color: #fff #E8E8E8 #E8E8E8 #E8E8E8;
+}
+
+
+/* Animation CSS For Nav */
+
+@keyframes nav-up {
+    100% {
+        height: 0px;
+    }
+}
+
+@keyframes nav-down {
+    5% {
+        height: 5px;
+    }
+    10% {
+        height: 10px;
+    }
+    20% {
+        height: 20px;
+    }
+    40% {
+        height: 40px;
+    }
+    60% {
+        height: 60px;
+    }
+    80% {
+        height: 80px;
+    }
+    100% {
+        height: 80px;
+    }
+}
+
+
+/* Animation CSS For Tool-box-2 */
+
+@keyframes op-up {
+    10% {
+        bottom: 90px;
+    }
+    20% {
+        bottom: 85px;
+    }
+    30% {
+        bottom: 80px;
+    }
+    40% {
+        bottom: 75px;
+    }
+    50% {
+        bottom: 70px;
+    }
+    60% {
+        bottom: 65px;
+    }
+    70% {
+        bottom: 60px;
+    }
+    80% {
+        bottom: 55px;
+    }
+    100% {
+        bottom: 55px;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes op-down {
+    10% {
+        bottom: 55px;
+    }
+    20% {
+        bottom: 60px;
+    }
+    30% {
+        bottom: 65px;
+    }
+    40% {
+        bottom: 70px;
+    }
+    50% {
+        bottom: 75px;
+    }
+    60% {
+        bottom: 80px;
+    }
+    70% {
+        bottom: 85px;
+    }
+    80% {
+        bottom: 80px;
+    }
+    100% {
+        opacity: 0;
+        bottom: 90px;
+        visibility: hidden;
+    }
+}
+
+
+/* Animation CSS For Tool-box */
+
+@keyframes drop-down {
+    10% {
+        bottom: 35px
+    }
+    20% {
+        bottom: 30px;
+    }
+    30% {
+        bottom: 25px
+    }
+    40% {
+        bottom: 20px
+    }
+    60% {
+        bottom: 15px
+    }
+    70% {
+        bottom: 10px
+    }
+    90% {
+        bottom: 5px
+    }
+    100% {
+        bottom: 0px;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes drop-up {
+    10% {
+        bottom: 0px;
+        visibility: visible;
+        opacity: 1;
+    }
+    20% {
+        bottom: 5px;
+    }
+    30% {
+        bottom: 10px;
+    }
+    40% {
+        bottom: 15px
+    }
+    60% {
+        bottom: 20px
+    }
+    70% {
+        bottom: 25px
+    }
+    90% {
+        bottom: 30px
+    }
+    100% {
+        bottom: 35px;
+    }
+}
+
+
+/* Animation CSS For Turn */
+
+@keyframes turn-up {
+    10% {
+        transform: rotate(10deg);
+    }
+    20% {
+        transform: rotate(30deg);
+    }
+    30% {
+        transform: rotate(50deg);
+    }
+    40% {
+        transform: rotate(70deg);
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    60% {
+        transform: rotate(110deg);
+    }
+    70% {
+        transform: rotate(130deg);
+    }
+    80% {
+        transform: rotate(150deg);
+    }
+    90% {
+        transform: rotate(170deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes turn-down {
+    10% {
+        transform: rotate(180deg);
+    }
+    20% {
+        transform: rotate(170deg);
+    }
+    30% {
+        transform: rotate(150deg);
+    }
+    40% {
+        transform: rotate(130deg);
+    }
+    50% {
+        transform: rotate(110deg);
+    }
+    60% {
+        transform: rotate(90deg);
+    }
+    70% {
+        transform: rotate(70deg);
+    }
+    80% {
+        transform: rotate(50deg);
+    }
+    90% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* Animation CSS For show-now & hide-now */
+
+@keyframes show-now {
+    10% {
+        width: 100px;
+    }
+    30% {
+        width: 150px;
+    }
+    50% {
+        width: 180px;
+    }
+    70% {
+        width: 200px;
+    }
+    100% {
+        opacity: 1;
+        width: 230px;
+        visibility: visible;
+    }
+}
+
+@keyframes hide-now {
+    10% {
+        width: 230px;
+    }
+    30% {
+        width: 200px;
+    }
+    50% {
+        width: 180px;
+    }
+    70% {
+        width: 150px;
+    }
+    100% {
+        width: 50px;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
