@@ -1,0 +1,223 @@
+html {
+    background-color: #293B29;
+    color: white;
+}
+
+body main .clock-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -175px 0 0 -175px;
+    width: 350px;
+    height: 350px;
+    background-color: rgba(50, 80, 60, 1);
+    border-radius: 20%;
+}
+
+body main .clock-box .clock-dial {
+    position: relative;
+    margin: 25px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: solid 1px black;
+    background-color: #293B29;
+}
+
+body main .clock-box .clock-dial .clock-times {
+    position: relative;
+    margin: 25px;
+    width: 245px;
+    height: 245px;
+    border-radius: 50%;
+    /* border: dotted 3px #b9b9b9; */
+    list-style: none;
+    transform: rotate(0deg);
+}
+
+body main .clock-box .clock-dial .clock-times .orange-times:nth-child(1n+2) {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    left: 128px;
+    top: 108px;
+    transform: translateY(120px);
+}
+
+body main .clock-box .clock-dial .clock-times .orange-times:nth-child(6n+6) {
+    position: absolute;
+    width: 4px;
+    height: 7px;
+    background-color: rgb(252, 95, 9);
+    background: transparent;
+    left: 128px;
+    top: 95px;
+    transform: translateY(110px);
+}
+
+body main .clock-box .clock-dial .clock-times .orange-times:nth-child(6n+6)::before {
+    position: relative;
+    content: '✦';
+    font-size: 2px;
+    color: #FF7600;
+}
+
+body main .clock-box .clock-dial .clock-times .orange-times:nth-child(6n+3) {
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    background-color: rgb(252, 95, 9);
+    left: 128px;
+    top: -5px;
+    transform: translateY(110px);
+}
+
+body main .clock-box .clock-dial .clock-times .minute-hand {
+    position: relative;
+    width: 10px;
+    height: 96px;
+    background-color: rgb(252, 95, 9);
+    border-radius: 10px;
+    left: 123px;
+    top: 40px;
+    z-index: 996;
+    transform-origin: 50% 95%;
+    transform: rotate(0deg);
+}
+
+body main .clock-box .clock-dial .clock-times .minute-hand>div {
+    position: relative;
+    width: 1px;
+    height: 35px;
+    background-color: white;
+    left: 4px;
+    top: 55px;
+    z-index: 997;
+}
+
+body main .clock-box .clock-dial .clock-times .minute-hand>div>div {
+    position: relative;
+    width: 3px;
+    height: 3px;
+    background-color: white;
+    border-radius: 50%;
+    left: -1px;
+    top: 33px;
+    z-index: 998;
+}
+
+body main .clock-box .clock-dial .clock-times .hour-hand {
+    position: relative;
+    width: 72px;
+    height: 8px;
+    background-color: white;
+    left: 125px;
+    top: 30px;
+    transform-origin: 4% 40%;
+    transform: rotate(270deg);
+}
+
+body main .clock-box .clock-dial .clock-times .hour-hand>div {
+    position: relative;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    left: 50px;
+    top: 3px;
+    z-index: 998;
+}
+
+body main .clock-box .clock-dial .clock-times .second-hand {
+    position: relative;
+    width: 2px;
+    height: 35px;
+    background-color: #28ff28;
+    left: 126px;
+    top: 23px;
+    transform-origin: 50% 20%;
+    z-index: 995;
+}
+
+body main .clock-box .clock-dial .clock-times .second-hand>div {
+    position: relative;
+    width: 2px;
+    height: 20px;
+    background-color: #28ff28;
+    top: 32px;
+    left: 6px;
+    transform: rotate(-40deg);
+}
+
+body main .clock-box .clock-dial .clock-times .second-hand>div>div {
+    position: relative;
+    width: 2px;
+    height: 35px;
+    background-color: #28ff28;
+    top: 4px;
+    left: -17px;
+    transform: rotate(80deg);
+}
+
+body main .clock-box .clock-dial .clock-times .second-hand>div>div>div {
+    position: relative;
+    width: 2px;
+    height: 17px;
+    background-color: #28ff28;
+    top: 27px;
+    left: 8px;
+    transform: rotate(100deg);
+}
+
+body main .clock-box .clock-dial .clock-times .second-hand>div>div>div>div {
+    position: relative;
+    width: 2px;
+    height: 32px;
+    background-color: #28ff28;
+    top: -27px;
+    left: 10px;
+    transform: rotate(40deg);
+}
+
+body main .clock-box .clock-dial .clock-times .second-hand>div>div>div>div>div {
+    position: relative;
+    width: 7px;
+    height: 7px;
+    background-color: #28ff28;
+    border-radius: 50%;
+    top: -4px;
+    left: -2px;
+}
+
+body main .clock-box .clock-dial .clock-times .second-hand>div>div>div>div>div>div {
+    position: relative;
+    width: 3px;
+    height: 3px;
+    background-color: #28ff28;
+    border: solid 1px #293B29;
+    border-radius: 50%;
+    top: 1px;
+    left: 1px;
+}
+
+body main .clock-box .clock-dial .clock-times .am {
+    position: absolute;
+    left: 6px;
+    top: 15px;
+}
+
+body main .clock-box .clock-dial .clock-times .am span {
+    position: absolute;
+    font-size: 2px;
+}
+
+body main .clock-box .clock-dial .clock-times .pm {
+    position: absolute;
+    left: 7px;
+    top: -32px;
+}
+
+body main .clock-box .clock-dial .clock-times .pm span {
+    position: absolute;
+    font-size: 2px;
+}
