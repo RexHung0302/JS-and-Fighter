@@ -1,0 +1,173 @@
+    html {
+        background-color: #E8E8E8;
+        color: white;
+        font-family: Microsoft JhengHei;
+    }
+    /* header */
+    /* body */
+    
+    main .calculator-box {
+        position: absolute;
+        margin-top: -262px;
+        margin-left: -175px;
+        top: 50%;
+        left: 50%;
+        width: 350px;
+        height: 525px;
+        background-color: #062145;
+        border-radius: 20px;
+        box-shadow: 0 0 20px #000000;
+    }
+    
+    main .calculator-box:hover {
+        margin-top: -265px;
+        margin-left: -178px;
+        box-shadow: 0px 5px 20px #000000;
+    }
+    
+    main .calculator-box .calculator-top-box {
+        position: relative;
+        width: 350px;
+        height: 109px;
+        background-color: #041936;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    
+    main .calculator-box .calculator-top-box ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #F5F5F5;
+        border-radius: 10px;
+    }
+    
+    main .calculator-box .calculator-top-box::-webkit-scrollbar {
+        width: 10px;
+        background-color: #F5F5F5;
+    }
+    
+    main .calculator-box .calculator-top-box::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(122, 153, 217)), color-stop(0.72, rgb(73, 125, 189)), color-stop(0.86, rgb(28, 58, 148)));
+    }
+    
+    main .calculator-box .calculator-top-box .count-box {
+        position: relative;
+        width: 324px;
+        height: 50px;
+        background-color: #041936;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        text-align: right;
+        font-size: 16px;
+        top: 12px;
+        right: -17px;
+    }
+    
+    main .calculator-box .calculator-top-box .result-box {
+        position: relative;
+        width: 350px;
+        height: 59px;
+        background-color: #041936;
+        text-align: right;
+        font-size: 56px;
+        bottom: 20px;
+        left: -10px;
+    }
+    
+    main .calculator-box .calculator-top-box .count-num {
+        color: #00C4FF;
+    }
+    
+    main .calculator-box .calculator-top-box .glass {
+        position: absolute;
+        width: 350px;
+        height: 109px;
+        background-color: rgb(228, 241, 228);
+        opacity: 0.8;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        top: 0px;
+        filter: blur(120px);
+    }
+    
+    main .calculator-box .calculator-body-box {
+        position: relative;
+        width: 350px;
+        height: 416px;
+    }
+    
+    main .calculator-box .calculator-body-box .calculator-btn {
+        display: inline-flex;
+        width: 350px;
+        height: 62px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    main .calculator-box .calculator-body-box .calculator-btn>div {
+        text-align: center;
+        width: 88px;
+        line-height: 62px;
+        font-size: 24px;
+        border-radius: 25px;
+        color: rgba(255, 255, 255, 0.5);
+        margin-right: 10px;
+    }
+    
+    main .calculator-box .calculator-body-box .calculator-btn .sign-box {
+        background-color: #041936;
+    }
+    
+    main .calculator-box .calculator-body-box .calculator-btn>div:hover {
+        color: rgba(255, 255, 255, 1);
+        background-color: #00C4FF;
+    }
+    
+    main .calculator-box .calculator-body-box .calculator-btn .num-box:hover {
+        animation: myfirst 0.5s;
+        -moz-animation: myfirst 0.5s;
+        /* Firefox */
+        -webkit-animation: myfirst 0.5s;
+        /* Safari 和 Chrome */
+        -o-animation: myfirst 0.5s;
+        /* Opera */
+    }
+    
+    main .calculator-box .calculator-body-box .calculator-btn .sign {
+        color: rgba(255, 255, 255, 1);
+    }
+    
+    main .calculator-box .calculator-body-box .calculator-btn .sign-2 {
+        color: #00C4FF;
+    }
+    
+    main .calculator-box .calculator-body-box .calculator-btn .result-sign {
+        width: 173px;
+        text-align: right;
+        padding-right: 40px;
+        background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00c4ff+0,6c00ff+100 */
+        background: rgb(0, 196, 255);
+        /* Old browsers */
+        background: -moz-linear-gradient(left, rgba(0, 196, 255, 1) 0%, rgba(108, 0, 255, 1) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(0, 196, 255, 1) 0%, rgba(108, 0, 255, 1) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(0, 196, 255, 1) 0%, rgba(108, 0, 255, 1) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00c4ff', endColorstr='#6c00ff', GradientType=1);
+        /* IE6-9 */
+        ;
+    }
+    /* footer */
+    /* Animate */
+    
+    @keyframes myfirst {
+        0% {
+            border-radius: 10px;
+        }
+        100% {
+            border-radius: 25px;
+        }
+    }
