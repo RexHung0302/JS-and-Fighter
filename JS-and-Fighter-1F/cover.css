@@ -1,0 +1,136 @@
+html {
+    background-color: #F0F0F0;
+    height: 1372px;
+    color: #2EB738;
+    font-family: 'Open Sans', Microsoft JhengHei, Helvetica, sans-serif;
+}
+
+header {
+    height: 2rem;
+}
+
+body main .row-1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body main .title-box {
+    font-size: 56px;
+}
+
+body main .title-box .title .title-1 {
+    display: block;
+    font-size: 56px;
+    margin-bottom: -35px;
+}
+
+body main .title-box span {
+    font-size: 24px;
+    display: -webkit-inline-box;
+}
+
+body main .row-1>div {
+    min-width: 350px;
+    height: 366px;
+    overflow: hidden;
+}
+
+body main .row-1 .title-box {
+    text-align: center;
+    margin: 0 30px;
+}
+
+body main .row-1 .hr-box :before {
+    content: "x";
+    color: #2EB738;
+    position: absolute;
+    top: -17px;
+    right: -30px;
+    font-size: 24px;
+}
+
+body main .row-1 .hr-box :after {
+    content: "x";
+    color: #2EB738;
+    position: absolute;
+    top: -17px;
+    left: -30px;
+    font-size: 24px;
+}
+
+body main .row-1 .title-box .title {
+    padding: 105px 0;
+}
+
+body main .row-1 .title-box .hr-1 {
+    width: 310px;
+    border: solid #2EB738 1px;
+    position: absolute;
+    left: 60px;
+}
+
+body main .box {
+    font-size: 24px;
+    text-align: left;
+    background-color: white;
+    border-radius: 100px 0px 30px 0px;
+    margin: 0 30px 40px 30px;
+    box-shadow: 4px 3px #D8D8D8;
+}
+
+body main .title-box .hr-box-1 {
+    margin-top: 30px;
+}
+
+body main .row-1 .box-title {
+    font-size: 128px;
+    font-weight: bold;
+}
+
+body main .row-1 .box>div {
+    padding: 20px 25px 0 25px;
+}
+
+body main .row-1 .box-title {
+    padding-left: 60px;
+    text-shadow: 4px 3px #F0F0F0;
+}
+
+body main .row-1 .box .left-part {
+    padding: 0 5px 0 45px;
+    margin: 0px;
+    line-height: 2.7rem;
+    list-style: none;
+    display: table-cell;
+}
+
+body main .row-1 .box .right-part {
+    padding: 0;
+    margin: 0px;
+    list-style: none;
+}
+
+body main .row-1 .box .right-box {
+    display: table-cell;
+    position: relative;
+    bottom: 70px;
+    padding: 0 5px 0 40px;
+    list-style: none;
+    line-height: 2.7rem;
+}
+
+body main .row-1 .box .box-2 {
+    padding: 25px 0 0 0;
+    display: table-cell;
+}
+
+footer>div {
+    background: #2EB738;
+    height: 34px;
+    color: #F0F0F0;
+    text-align: right;
+    line-height: 34px;
+    font-weight: 100;
+    padding-right: 85px;
+    font-size: 16px;
+}
