@@ -1,0 +1,177 @@
+.puzzle_finish[data-v-381730fa] {
+  transition: all 0.8s ease;
+  box-shadow: 0px 0px 12px 10px #ffff;
+}
+.hovered[data-v-381730fa] {
+  transition: all 0.8s ease;
+  background-color: #ffffff6e;
+}
+.puzzleShow__showTitle .animated[data-v-381730fa] {
+  animation-duration: 2s;
+}
+.fade-enter-active[data-v-381730fa],
+.fade-leave-active[data-v-381730fa] {
+  transition: opacity 0.5s;
+}
+.fade-enter[data-v-381730fa], .fade-leave-to[data-v-381730fa] {
+  opacity: 0;
+}
+.blurBox[data-v-381730fa] {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: inherit;
+  filter: blur(2px);
+}
+.puzzleShow[data-v-381730fa] {
+  width: 100%;
+  height: 100vh;
+}
+.puzzleShow .puzzleShow__box[data-v-381730fa] {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -200px;
+}
+.puzzleShow .puzzleShow__box .puzzleShow__content[data-v-381730fa] {
+      position: relative;
+      width: 100%;
+      height: 100%;
+}
+.puzzleShow .puzzleShow__startBtn[data-v-381730fa] {
+    position: absolute;
+    bottom: 40px;
+    width: 350px;
+    height: 67px;
+    margin-left: -175px;
+    background-color: #ffffff00;
+    border: 2px solid white;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.puzzleShow .puzzleShow__startBtn[data-v-381730fa]:hover {
+      background-color: #ffffff80;
+      color: black;
+}
+.puzzleShow .puzzleShow__showTitle[data-v-381730fa] {
+    color: white;
+    font-size: 32px;
+}
+.puzzleGame[data-v-381730fa] {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 40px;
+}
+.puzzleGame .puzzleGame__box[data-v-381730fa] {
+    position: relative;
+}
+.puzzleGame .puzzleGame__box .puzzleGame__showTitle[data-v-381730fa] {
+      color: white;
+      font-size: 36px;
+}
+.puzzleGame .puzzleGame__box .puzzleGame__playArea[data-v-381730fa] {
+      position: relative;
+      display: flex;
+}
+.puzzleGame .puzzleGame__box .puzzleGame__playArea .puzzleGame__dropPlace[data-v-381730fa] {
+        position: relative;
+        flex: 0 0 60%;
+}
+.puzzleGame .puzzleGame__box .puzzleGame__playArea .puzzleGame__dropPlace .puzzleGame__table[data-v-381730fa] {
+          position: relative;
+          width: 540px;
+          height: 540px;
+}
+.puzzleGame .puzzleGame__box .puzzleGame__playArea .puzzleGame__dropPlace .puzzleGame__table[data-v-381730fa]:after {
+            content: "";
+            position: absolute;
+            background-image: url(./img/FullPuzzle.png);
+            background-position: -50px -50px;
+            top: 1px;
+            left: 0;
+            width: 540px;
+            height: 540px;
+            opacity: 0.3;
+            transition: all 0.8s ease;
+            z-index: -1;
+}
+.puzzleGame .puzzleGame__box .puzzleGame__playArea .puzzleGame__dropPlace .puzzleGame__td[data-v-381730fa] {
+          position: relative;
+          border: 2px solid white;
+          width: 180px;
+          height: 180px;
+}
+.puzzleGame .puzzleGame__box .puzzleGame__playArea .puzzleGame__dropPlace .puzzleGame__td img[data-v-381730fa] {
+            position: absolute;
+            top: 0;
+            left: 0;
+}
+.puzzleGame .puzzleGame__box .puzzleGame__playArea .puzzleGame__dropPlace .puzzleGame__td #puzzleImg_2[data-v-381730fa] {
+            left: -27px;
+}
+.puzzleGame .puzzleGame__box .puzzleGame__playArea .puzzleGame__dropPlace .puzzleGame__td #puzzleImg_5[data-v-381730fa] {
+            top: -27px;
+}
+.puzzleGame .puzzleGame__box .puzzleGame__playArea .puzzleGame__dropPlace .puzzleGame__td #puzzleImg_6[data-v-381730fa] {
+            left: -29px;
+}
+.puzzleGame .puzzleGame__box .puzzleGame__playArea .puzzleGame__dropPlace .puzzleGame__td #puzzleImg_7[data-v-381730fa] {
+            top: -27px;
+}
+.puzzleGame .puzzleGame__box .puzzleGame__playArea .puzzleGame__dropPlace .puzzleGame__td #puzzleImg_8[data-v-381730fa] {
+            left: -28px;
+            top: -1px;
+}
+.puzzleGame .puzzleGame__box .puzzleGame__playArea .puzzleGame__dropPlace .puzzleGame__td #puzzleImg_9[data-v-381730fa] {
+            top: -28px;
+            left: -2px;
+}
+.puzzleGame .puzzleGame__box .puzzleGame__playArea .puzzleGame__puzzles[data-v-381730fa] {
+        flex: 0 0 40%;
+}
+.puzzleGame .puzzleGame__box .puzzleGame__playArea .puzzleGame__puzzles li[data-v-381730fa] {
+          position: relative;
+          top: 0;
+          right: 0;
+          list-style: none;
+}
+.puzzleGame .puzzleGame__box .puzzleGame__playArea .puzzleGame__puzzles .puzzleGame__puzzle[data-v-381730fa] {
+          position: absolute;
+          cursor: pointer;
+}
+.puzzleGame .puzzleGame__footer[data-v-381730fa] {
+    position: relative;
+    top: 50px;
+}
+.puzzleGame .puzzleGame__footer .puzzleGame__reBtn[data-v-381730fa] {
+      width: 350px;
+      height: 67px;
+      background-color: #ffffff00;
+      border: 2px solid white;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      transition: all 0.5s ease;
+}
+.puzzleGame .puzzleGame__footer .puzzleGame__reBtn[data-v-381730fa]:hover {
+        background-color: #ffffff80;
+        color: black;
+}
+.playBlur[data-v-381730fa] {
+  background: rgba(0, 0, 0, 0.3);
+  filter: blur(0);
+}
+.invisible[data-v-381730fa] {
+  display: none;
+}
+
+
+/*# sourceMappingURL=main.css.map*/
