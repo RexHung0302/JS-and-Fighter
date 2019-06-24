@@ -84,6 +84,7 @@
 .puzzleGame .puzzleGame__box .puzzleGame__playArea .puzzleGame__dropPlace[data-v-381730fa] {
         position: relative;
         flex: 0 0 60%;
+        transition: all 0.8s ease;
 }
 .puzzleGame .puzzleGame__box .puzzleGame__playArea .puzzleGame__dropPlace .puzzleGame__table[data-v-381730fa] {
           position: relative;
@@ -146,6 +147,24 @@
 .puzzleGame .puzzleGame__box .puzzleGame__playArea .puzzleGame__puzzles .puzzleGame__puzzle[data-v-381730fa] {
           position: absolute;
           cursor: pointer;
+}
+.puzzleGame .puzzleGame__box .puzzleGame__playArea .puzzleGame__infoBox[data-v-381730fa] {
+        color: #ffff;
+        width: 350px;
+}
+.puzzleGame .puzzleGame__box .puzzleGame__playArea .puzzleGame__infoBox .puzzleGame__playAgain[data-v-381730fa] {
+          width: 350px;
+          height: 67px;
+          background-color: #ffffff00;
+          border: 2px solid white;
+          color: white;
+          font-size: 24px;
+          cursor: pointer;
+          transition: all 0.5s ease;
+}
+.puzzleGame .puzzleGame__box .puzzleGame__playArea .puzzleGame__infoBox .puzzleGame__playAgain[data-v-381730fa]:hover {
+            background-color: #ffffff80;
+            color: black;
 }
 .puzzleGame .puzzleGame__footer[data-v-381730fa] {
     position: relative;
