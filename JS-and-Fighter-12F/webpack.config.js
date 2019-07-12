@@ -114,7 +114,7 @@ module.exports = {
         //     title: 'Puzzle-index',
         //     hash: true,
         //     template: './pug/index.pug',
-        //     filename: './index.html'
+        //     filename: './index2.html'
         // }),
         new MiniCssExtractPlugin({
             // 指定輸出位置
