@@ -1,6 +1,6 @@
 // Vue.js
-const VueLoaderPlugin = require('vue-loader/lib/plugin')
-    // 清除 dist 多餘檔案
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
+// 清除 dist 多餘檔案
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 // 每次創建一個新的index
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -34,7 +34,7 @@ module.exports = {
         rules: [{
                 test: /\.pug$/,
                 use: {
-                    loader: 'pug-plain-loader',
+                    loader: 'pug-html-loader',
                     options: {
                         self: true, // 這個要加
                         pretty: true,
@@ -110,12 +110,12 @@ module.exports = {
         ]),
         new HtmlWebpackPlugin(),
         // 有幾個 pug 檔就要用幾個
-        // new HtmlWebpackPlugin({
-        //     title: 'Puzzle-index',
-        //     hash: true,
-        //     template: './pug/index.pug',
-        //     filename: './index.html'
-        // }),
+        new HtmlWebpackPlugin({
+            title: 'Puzzle-index',
+            hash: true,
+            template: './pug/index.pug',
+            filename: './index.html'
+        }),
         new MiniCssExtractPlugin({
             // 指定輸出位置
             // [name] 為上方進入點設定的 "名稱"

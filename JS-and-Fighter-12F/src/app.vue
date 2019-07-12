@@ -132,7 +132,6 @@ export default {
     },
     drag(e) {
       this.drag_id = e.target.id.split("_", 2)[1];
-      // console.log(e);
       this.target_className = e.target.className;
       // 需要加上 setTimeout 才不會馬上消失
       setTimeout(() => (e.target.className += " invisible"), 0);
@@ -163,7 +162,6 @@ export default {
       // e.target.append(this.puzzleInfo);
       e.target.appendChild(this.puzzleInfo);
       if (this.drag_id === this.drop_id) {
-        console.log("123");
         // 如果放對位子取消 draggable 並加上發光特效
         $("#puzzleImg_" + this.drop_id).attr("draggable", false);
         // 特效
@@ -173,7 +171,6 @@ export default {
         // 先放一個變數來放找到的順序
         var arr_numDelete = this.puzzles_num.indexOf(parseInt(this.drag_id));
         this.puzzles_num.splice(arr_numDelete, 1);
-        console.log(this.puzzles_num);
         if (this.puzzles_num.length === 0) {
           console.log("贏了");
           $(".puzzleGame__table").addClass("puzzle_finish");

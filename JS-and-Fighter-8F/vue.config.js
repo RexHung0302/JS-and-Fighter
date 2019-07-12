@@ -1,3 +1,4 @@
 module.exports = {
-  lintOnSave: false
+    publicPath: '/JS-and-Fighter/JS-and-Fighter-8F/dist/',
+    lintOnSave: false
 };
